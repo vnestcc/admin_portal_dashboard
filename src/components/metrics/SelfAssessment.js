@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, List, Typography, Divider, Tag, Progress, Row, Col } from 'antd';
+import { Card, List, Typography, Divider, Progress, Row, Col } from 'antd';
 import { 
   RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
   ResponsiveContainer, Legend, Tooltip, LineChart, Line, CartesianGrid, XAxis, YAxis,

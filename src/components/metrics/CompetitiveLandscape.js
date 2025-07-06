@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, List, Typography, Divider, Tag, Progress } from 'antd';
+import { Card, List, Typography, Divider, Progress } from 'antd';
 import { RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 
 const { Title, Text } = Typography;

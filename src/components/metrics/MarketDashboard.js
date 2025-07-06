@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Progress, Divider, Typography } from 'antd';
 import {
-  BarChart, Bar, LineChart, Line, PieChart, Pie, Cell,
+  BarChart, Bar, LineChart, Line,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
@@ -28,48 +28,48 @@ const MarketDashboard = ({ data, history }) => {
   }));
 
   // Data for Sales Process Breakdown Pie Chart
-  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8'];
+  // const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8'];
 
-  const SalesProcessPieChart = ({ processData }) => {
-    const pieData = [
-      { name: 'Digital Marketing', value: 35 },
-      { name: 'Direct Sales', value: 25 },
-      { name: 'Partnerships', value: 20 },
-      { name: 'Referrals', value: 15 },
-      { name: 'Other', value: 5 }
-    ];
+  // const SalesProcessPieChart = ({ processData }) => {
+  //   const pieData = [
+  //     { name: 'Digital Marketing', value: 35 },
+  //     { name: 'Direct Sales', value: 25 },
+  //     { name: 'Partnerships', value: 20 },
+  //     { name: 'Referrals', value: 15 },
+  //     { name: 'Other', value: 5 }
+  //   ];
 
-    return (
-      <div className="h-64">
-        <ResponsiveContainer width="100%" height="100%">
-          <PieChart>
-            <Pie
-              data={pieData}
-              cx="50%"
-              cy="50%"
-              labelLine={false}
-              outerRadius={80}
-              fill="#8884d8"
-              dataKey="value"
-              nameKey="name"
-              label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
-            >
-              {pieData.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-              ))}
-            </Pie>
-            <Tooltip 
-              formatter={(value, name) => [
-                `${value}%`,
-                name
-              ]}
-            />
-            <Legend />
-          </PieChart>
-        </ResponsiveContainer>
-      </div>
-    );
-  };
+  //   return (
+  //     <div className="h-64">
+  //       <ResponsiveContainer width="100%" height="100%">
+  //         <PieChart>
+  //           <Pie
+  //             data={pieData}
+  //             cx="50%"
+  //             cy="50%"
+  //             labelLine={false}
+  //             outerRadius={80}
+  //             fill="#8884d8"
+  //             dataKey="value"
+  //             nameKey="name"
+  //             label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+  //           >
+  //             {pieData.map((entry, index) => (
+  //               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+  //             ))}
+  //           </Pie>
+  //           <Tooltip 
+  //             formatter={(value, name) => [
+  //               `${value}%`,
+  //               name
+  //             ]}
+  //           />
+  //           <Legend />
+  //         </PieChart>
+  //       </ResponsiveContainer>
+  //     </div>
+  //   );
+  // };
 
   return (
     <div className="market-dashboard">

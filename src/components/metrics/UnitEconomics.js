@@ -13,7 +13,7 @@ const UnitEconomics = ({ data, history }) => {
   const unitData = data[0]; // Assuming we're showing the most recent data
 
   // Colors for charts
-  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8'];
+  // const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8'];
   const MARKETING_COLORS = ['#3366CC', '#DC3912', '#FF9900', '#109618', '#990099'];
 
   // Data for CAC Trend Chart

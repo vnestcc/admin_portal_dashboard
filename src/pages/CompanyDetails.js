@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../auth/AuthProvider';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import FinanceDashboard from '../components/metrics/FinanceDashboard';
 import MarketDashboard from '../components/metrics/MarketDashboard';

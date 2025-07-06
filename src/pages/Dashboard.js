@@ -12,64 +12,64 @@ const colors=[
   "from-blue-500 to-cyan-600"
 ]
 
-const mockCompanies = [
-  {
-    id: 1,
-    name: "ZVIA Tech Pvt. Ltd.",
-    description: "ZVIA Tech provides an AI-powered platform that offers personalized learning experiences and data-driven insights.",
-    letter: "Z",
-    color: "from-purple-500 to-indigo-600",
-    tags: ["EdTech", "Digital Learning", "Education Analytics"]
-  },
-  {
-    id: 2,
-    name: "Mafkin Robotics",
-    description: "Autonomous ship hull cleaning and inspection robots",
-    letter: "M",
-    color: "from-green-500 to-teal-600",
-    tags: ["HealthTech", "Medical Imaging"]
-  },
-  {
-    id: 3,
-    name: "Cittaa Health Service",
-    description: "Cittaa Health Services is transforming mental healthcare in educational institutions through integrated solutions.",
-    letter: "C",
-    color: "from-orange-500 to-red-500",
-    tags: ["Healthcare", "Telemedicine", "Patient Care"]
-  },
-  {
-    id: 4,
-    name: "TechFlow Solutions",
-    description: "Advanced workflow automation and AI-driven business process optimization platform.",
-    letter: "T",
-    color: "from-blue-500 to-cyan-600",
-    tags: ["AI Diagnostics", "Healthcare"]
-  }
-];
+// const mockCompanies = [
+//   {
+//     id: 1,
+//     name: "ZVIA Tech Pvt. Ltd.",
+//     description: "ZVIA Tech provides an AI-powered platform that offers personalized learning experiences and data-driven insights.",
+//     letter: "Z",
+//     color: "from-purple-500 to-indigo-600",
+//     tags: ["EdTech", "Digital Learning", "Education Analytics"]
+//   },
+//   {
+//     id: 2,
+//     name: "Mafkin Robotics",
+//     description: "Autonomous ship hull cleaning and inspection robots",
+//     letter: "M",
+//     color: "from-green-500 to-teal-600",
+//     tags: ["HealthTech", "Medical Imaging"]
+//   },
+//   {
+//     id: 3,
+//     name: "Cittaa Health Service",
+//     description: "Cittaa Health Services is transforming mental healthcare in educational institutions through integrated solutions.",
+//     letter: "C",
+//     color: "from-orange-500 to-red-500",
+//     tags: ["Healthcare", "Telemedicine", "Patient Care"]
+//   },
+//   {
+//     id: 4,
+//     name: "TechFlow Solutions",
+//     description: "Advanced workflow automation and AI-driven business process optimization platform.",
+//     letter: "T",
+//     color: "from-blue-500 to-cyan-600",
+//     tags: ["AI Diagnostics", "Healthcare"]
+//   }
+// ];
 
 
-const companyDisplayDetails = {
-  "1": {
-    letter: "Z",
-    color: "from-purple-500 to-indigo-600",
-    tags: ["EdTech", "Digital Learning", "Education Analytics"]
-  },
-  "2": {
-    letter: "M",
-    color: "from-green-500 to-teal-600",
-    tags: ["HealthTech", "Medical Imaging"]
-  },
-  "3": {
-    letter: "C",
-    color: "from-orange-500 to-red-500",
-    tags: ["Healthcare", "Telemedicine", "Patient Care"]
-  },
-  "4": {
-    letter: "T",
-    color: "from-blue-500 to-cyan-600",
-    tags: ["AI", "Automation", "Business Process"]
-  }
-};
+// const companyDisplayDetails = {
+//   "1": {
+//     letter: "Z",
+//     color: "from-purple-500 to-indigo-600",
+//     tags: ["EdTech", "Digital Learning", "Education Analytics"]
+//   },
+//   "2": {
+//     letter: "M",
+//     color: "from-green-500 to-teal-600",
+//     tags: ["HealthTech", "Medical Imaging"]
+//   },
+//   "3": {
+//     letter: "C",
+//     color: "from-orange-500 to-red-500",
+//     tags: ["Healthcare", "Telemedicine", "Patient Care"]
+//   },
+//   "4": {
+//     letter: "T",
+//     color: "from-blue-500 to-cyan-600",
+//     tags: ["AI", "Automation", "Business Process"]
+//   }
+// };
 
 
 const DashboardPage = () => {

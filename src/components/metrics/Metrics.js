@@ -403,7 +403,7 @@ const Metrics = ({ companyId = 1 }) => {
     });
 
     return () => observer.disconnect();
-  }, [companyId]);
+  },);
 
   // Group graphs into rows of two
   const graphRows = [];

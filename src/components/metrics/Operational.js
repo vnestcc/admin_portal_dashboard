@@ -1,8 +1,8 @@
 import React from 'react';
-import { Card, List, Typography, Divider, Tag, Progress, Row, Col } from 'antd';
+import { Card, List, Typography, Divider, Progress, Row, Col } from 'antd';
 import { 
   RadialBarChart, RadialBar, Legend, ResponsiveContainer, 
-  BarChart, Bar, XAxis, YAxis, Tooltip, LineChart, Line, CartesianGrid 
+  BarChart, Bar, XAxis, YAxis, Tooltip , CartesianGrid 
 } from 'recharts';
 
 const { Title, Text } = Typography;

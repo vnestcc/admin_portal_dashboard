@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, List, Typography, Divider, Tag, Progress, Row, Col } from 'antd';
+import { Card, List, Typography, Divider, Progress, Row, Col } from 'antd';
 import { 
-  LineChart, Line, BarChart, Bar, 
+  LineChart, Line,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer 
 } from 'recharts';
 

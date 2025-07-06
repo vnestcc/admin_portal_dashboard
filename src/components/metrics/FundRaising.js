@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, Progress, Divider, Typography, Tag, Statistic, Timeline } from 'antd';
+import { Card, Progress, Divider, Typography, Statistic } from 'antd';
 import {
-  BarChart, Bar, PieChart, Pie, Cell, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
-import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
+// import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
 
 const { Title, Text } = Typography;
 
@@ -21,53 +21,53 @@ const FundRaising = ({ data, history }) => {
   }));
 
   // Data for Investor Pipeline
-  const investorPipelineData = [
-    { name: 'VC Firms', value: 45 },
-    { name: 'Angel Investors', value: 30 },
-    { name: 'Corporate VCs', value: 15 },
-    { name: 'Family Offices', value: 10 },
-  ];
+  // const investorPipelineData = [
+  //   { name: 'VC Firms', value: 45 },
+  //   { name: 'Angel Investors', value: 30 },
+  //   { name: 'Corporate VCs', value: 15 },
+  //   { name: 'Family Offices', value: 10 },
+  // ];
 
-  // Funding round timeline items
-  const roundTimeline = [
-    { 
-      label: 'Seed Round', 
-      date: 'Q1 2022', 
-      amount: '₹50L', 
-      valuation: '₹20Cr',
-      color: 'green'
-    },
-    { 
-      label: 'Series A', 
-      date: 'Q3 2022', 
-      amount: '₹2Cr', 
-      valuation: '₹80Cr',
-      color: 'blue'
-    },
-    { 
-      label: 'Series B', 
-      date: 'Q2 2023', 
-      amount: '₹5Cr', 
-      valuation: '₹200Cr',
-      color: 'purple'
-    },
-    { 
-      label: 'Series C (Current)', 
-      date: new Date(fundraisingData.last_round).toLocaleDateString('en-IN', { year: 'numeric', quarter: 'numeric' }),
-      amount: `₹${fundraisingData.target_amount}Cr`, 
-      valuation: `₹${fundraisingData.valuation_expectations}Cr`,
-      color: 'orange'
-    },
-    { 
-      label: 'Next Round (Target)', 
-      date: new Date(fundraisingData.next_round).toLocaleDateString('en-IN', { year: 'numeric', quarter: 'numeric' }),
-      amount: 'TBD', 
-      valuation: 'TBD',
-      color: 'gray'
-    },
-  ];
+  // // Funding round timeline items
+  // const roundTimeline = [
+  //   { 
+  //     label: 'Seed Round', 
+  //     date: 'Q1 2022', 
+  //     amount: '₹50L', 
+  //     valuation: '₹20Cr',
+  //     color: 'green'
+  //   },
+  //   { 
+  //     label: 'Series A', 
+  //     date: 'Q3 2022', 
+  //     amount: '₹2Cr', 
+  //     valuation: '₹80Cr',
+  //     color: 'blue'
+  //   },
+  //   { 
+  //     label: 'Series B', 
+  //     date: 'Q2 2023', 
+  //     amount: '₹5Cr', 
+  //     valuation: '₹200Cr',
+  //     color: 'purple'
+  //   },
+  //   { 
+  //     label: 'Series C (Current)', 
+  //     date: new Date(fundraisingData.last_round).toLocaleDateString('en-IN', { year: 'numeric', quarter: 'numeric' }),
+  //     amount: `₹${fundraisingData.target_amount}Cr`, 
+  //     valuation: `₹${fundraisingData.valuation_expectations}Cr`,
+  //     color: 'orange'
+  //   },
+  //   { 
+  //     label: 'Next Round (Target)', 
+  //     date: new Date(fundraisingData.next_round).toLocaleDateString('en-IN', { year: 'numeric', quarter: 'numeric' }),
+  //     amount: 'TBD', 
+  //     valuation: 'TBD',
+  //     color: 'gray'
+  //   },
+  // ];
 
-  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+  // const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
   return (
     <div className="fundraising-dashboard">

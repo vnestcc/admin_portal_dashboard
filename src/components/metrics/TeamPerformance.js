@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, Progress, Divider, Typography, Tag, List, Statistic } from 'antd';
+import { Card, Progress, Divider, Typography, Tag, List } from 'antd';
 import {
-  BarChart, Bar, LineChart, Line, PieChart, Pie, Cell,
+  BarChart, Bar,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
@@ -54,7 +54,7 @@ const TeamPerformance = ({ data, history }) => {
     .map(item => item.development_initiatives ? item.development_initiatives.replace(/^"+|"+$/g, ''):'')
     .flatMap(item => item.split(',').map(str => str.trim()))
 
-  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8'];
+  // const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8'];
 
   return (
     <div className="team-dashboard">

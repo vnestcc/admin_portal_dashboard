@@ -1,6 +1,8 @@
 import { User, LogOut, Building2, Check, X, Trash2, ExternalLink } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useAuth } from '../auth/AuthProvider';
+import FormsManagement from '../components/FormsManagement';
+import JobManagement from '../components/JobManagement';
 
 const apiUrl = process.env.REACT_APP_BACKEND_API;
 
@@ -319,6 +321,26 @@ const DashboardPage = () => {
                 >
                   User Management
                 </button>
+                <button
+                  onClick={() => setCurrentSection('forms')}
+                  className={`py-2 px-1 border-b-2 font-medium text-sm ${
+                    currentSection === 'forms'
+                      ? 'border-blue-500 text-blue-600'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  }`}
+                >
+                  Forms
+                </button>
+                <button
+                  onClick={() => setCurrentSection('careers')}
+                  className={`py-2 px-1 border-b-2 font-medium text-sm ${
+                    currentSection === 'careers'
+                      ? 'border-blue-500 text-blue-600'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  }`}
+                >
+                  Careers
+                </button>
               </nav>
             </div>
           </div>
@@ -524,6 +546,12 @@ const DashboardPage = () => {
               )}
             </div>
           )}
+
+          {/* Forms Section */}
+          {currentSection === 'forms' && <FormsManagement />}
+
+          {/* Careers Section */}
+          {currentSection === 'careers' && <JobManagement />}
         </div>
       </main>
     </div>
